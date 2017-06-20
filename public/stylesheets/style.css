@@ -1,8 +1,68 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html, body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 a {
-  color: #00B7FF;
+  color: #FF5349;
+}
+
+/*Navigation
+*/
+.nav {
+  height: 99px;
+}
+
+.nav-top {
+  height: 33px;
+  background-color: #000000;
+}
+
+.nav-stripe {
+  height: 5px;
+  background-color: #2FBA90;
+}
+
+.nav-brand {
+  display: inline-block;
+  font-family: 'Josefin Sans';
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  vertical-align: text-bottom;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 2%;
+  color: #000000;
+  font-family: 'Nunito';
+  font-size: 14px;
+  line-height: 4.5em;
+}
+
+.nav-border {
+  color: #000000;
+}
+
+/*Hero
+*/
+
+.hero {
+  margin-top: 5%;
+}
+
+.hero-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
