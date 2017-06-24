@@ -55,8 +55,14 @@ a {
   font-weight: bold;
 }
 
-.nav-brand-title:hover {
+.nav-brand-title:hover, .nav-brand-title-link:hover {
   color: #FF49F5;
+  text-decoration: none;
+}
+
+.nav-brand-title-link {
+  text-decoration: none;
+  color: #F5F5F5;
 }
 
 .nav-links {
@@ -140,10 +146,6 @@ a {
   color: #FF5349;
 }
 
-/*.hero-btn {
-  background-color: #FF5349;
-}*/
-
 .hero-buttons {
   width: 85%;
   text-align: center;
@@ -195,15 +197,22 @@ a {
     outline: 0;
   }
 
-.btn3 {
-  background-color: #16FF97;
-}
+  .btn3 {
+    background-color: #16FF97;
+  }
 
-.btn3:hover, .btn3:focus, .btn3:active:hover, .btn3:active:focus, .btn3:visited {
-    background-color: transparent;
-    color: #16FF97;
-    border: 2px solid #16FF97;
-    outline: 0;
+  .btn3:hover, .btn3:focus, .btn3:active:hover, .btn3:active:focus, .btn3:visited {
+      background-color: transparent;
+      color: #16FF97;
+      border: 2px solid #16FF97;
+      outline: 0;
+    }
+
+  .hero-header-container {
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+    color: #F5F5F5;
   }
 
 /*Intro
@@ -322,9 +331,11 @@ a {
   background-color: #000000;
   color: #F5F5F5;
   font-family: 'Monoton';
+  font-size: 62px;
   text-align: center;
   max-width: 100%;
   height: 325px;
+  padding-top: 15%;
 }
 
 .about-header {
