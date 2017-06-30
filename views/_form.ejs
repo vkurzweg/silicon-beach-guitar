@@ -1,0 +1,37 @@
+<div class="form container">
+  <div class="form-header row">
+    <div class="col-sm-6 form-title">
+      <h1 style="font-size: 62px">Contact</h1>
+    </div>
+    <div class="col-sm-6">
+      <img class="form-image" src="http://res.cloudinary.com/kurzweg/image/upload/v1497929707/pedals.jpg" alt="guitar pedals" />
+    </div>
+  </div>
+  <div class="container form-form">
+    <form action="/contactus" method="POST">
+      <div class="row">
+          <div class="col-sm-4 form-group fields">
+            <label class="form-label" htmlFor="name">Name</label>
+            <input name="contactName" type="text" class="form-control custom_input form-name" />
+          </div>
+          <div class="col-sm-4 form-group fields">
+            <label class="form-label" htmlFor="contactEmail">Email</label>
+            <input name="contactEmail" type="email" class="form-control custom_input form-email" />
+          </div>
+          <div class="col-sm-4 form-group fields">
+            <label class="form-label" htmlFor="contactPhone">Phone</label>
+            <input name="contactPhone" type="text" class="form-control form-input form-phone" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group fields">
+            <label class="form-label" htmlFor="contactPhone">Type of Lesson + Number of People Booking</label>
+            <textarea name="contactMessage" rows="5" form-0" class="form-control custom_input form-message"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <button id="contactBtn" type="submit" class="btn btn-primary form-btn">Send Message</button>
+    </form>
+  </div>
+</div>

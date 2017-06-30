@@ -8,12 +8,16 @@ $( window ).scroll(function() {
         $('.nav-stripe').css( 'background-color', '#FF49F5' );
         $('.hero-header').css('display', 'none')
         $('.hero-header-scroll').css('display', 'block')
+        $('.heroalt-header').css('display', 'none')
+        $('.heroalt-header-scroll').css('display', 'block')
 
       } else {
         $('.nav-brand-image').attr( 'src', 'http://res.cloudinary.com/kurzweg/image/upload/v1498257685/guitartree_pink.png' );
         $('.nav-stripe').css( 'background-color', '#16FF97' );
         $('.hero-header').css('display', 'block')
         $('.hero-header-scroll').css('display', 'none')
+        $('.heroalt-header').css('display', 'block')
+        $('.heroalt-header-scroll').css('display', 'none')
       }
 });
 
@@ -53,3 +57,37 @@ $('#btn3').on('click', function() {
   $('#btn1').addClass('btn1-postclick')
   $('#btn1').removeClass('btn1')
 })
+
+// Contact form
+
+var $name = $('.form-name');
+var $email = $('.form-email');
+var $phone = $('.form-phone');
+var $message = $('.form-message');
+
+$('.contactBtn').on('click', function(e) {
+  e.preventDefault();
+  console.log('clicked')
+  console.log($name.val(), $email.val(), $phone.val(), $message.val());
+  if ($name.val() !== '' && $email.val() !== '' && /(.+)@(.+){2,}\.(.+){2,}/.test($email.val())) {
+    $.ajax({
+      url: '/contactus',
+      type: 'POST',
+      dataType: 'json',
+      data: {
+        email: $email.val(),
+        name: $name.val(),
+        phone: $phone.val(),
+        message: $message.val()
+      },
+    })
+    .done(function() {
+      console.log("success");
+    })
+    .fail(function(err) {
+      console.log(err);
+    })
+    .always(function() {
+      console.log("complete");
+    });
+  }
