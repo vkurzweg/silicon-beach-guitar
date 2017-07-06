@@ -31,28 +31,28 @@ a {
 
 .nav-stripe {
   height: 5px;
-  background-color: #16FF97;
+  background-color: #24A5DA;
   z-index: 100;
   position: relative;
 }
 
 .nav-brand {
   display: inline-flex;
-  margin-top: -.5%;
+  margin-top: -1%;
   color: #F5F5F5;
 }
 
 .nav-brand-image {
   width: 50px;
   height: 50px;
-  margin-top: 2%;
-  margin-left: 5%
+  margin-top: 3%;
+  margin-left: 3%
 }
 
 .nav-brand-title {
-  font-family: 'Quicksand';
+  font-family: 'Poiret One';
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 2px;
   padding-top: 1%;
   color: #F5F5F5;
@@ -85,7 +85,7 @@ a {
 }
 
 .nav-link:hover {
-  color: #FF49F5;
+  color: #FC527F;
   text-decoration: none;
 }
 
@@ -94,6 +94,8 @@ a {
 
 .hero {
   margin-top: -2%;
+  background-color: rgba(43, 46, 37, .5);
+  height: 460px;
 }
 
 .heroalt {
@@ -103,12 +105,12 @@ a {
 }
 
 .hero-image {
-  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1498784208/guitar_stock.jpg');
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1499375519/mixer.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 425px;
+  height: 450px;
   margin-top: -5%;
 }
 
@@ -116,8 +118,8 @@ a {
   color: #FFFFFF;
   font-family: 'Monoton';
   text-align: center;
-  padding-top: 18%;
-  font-size: 60px;
+  padding-top: 15%;
+  font-size: 68px;
 }
 
 .hero-header-scroll {
@@ -133,7 +135,7 @@ a {
   color: #FFFFFF;
   font-family: 'Monoton';
   text-align: center;
-  font-size: 48px;
+  font-size: 56px;
 }
 
 .heroalt-header-scroll {
@@ -145,7 +147,7 @@ a {
 }
 
 .color1 {
-  color: #FF49F5;
+  color: #24A5DA;
 }
 
 .color2 {
@@ -153,7 +155,7 @@ a {
 }
 
 .color3 {
-  color: #16FF97;
+  color: #FC527F;
 }
 
 .hero-subhead {
@@ -205,20 +207,20 @@ a {
 }
 
 .btn1-postclick {
-  background-color: #FF49F5;
+  background-color: #24A5DA;
 }
 
 .btn1 {
   background-color: #000000;
-  color: #FF49F5;
-  border: 2px solid #FF49F5;
+  color: #24A5DA;
+  border: 2px solid #24A5DA;
   outline: 0;
 }
 
 .btn1:hover, .btn1:focus, .btn1:active:hover, .btn1:active:focus, .btn1:active:visited {
     background-color: transparent;
-    color: #FF49F5;
-    border: 2px solid #FF49F5;
+    color: #24A5DA;
+    border: 2px solid #24A5DA;
     outline: 0;
   }
 
@@ -234,13 +236,13 @@ a {
   }
 
   .btn3 {
-    background-color: #16FF97;
+    background-color: #FC527F;
   }
 
   .btn3:hover, .btn3:focus, .btn3:active:hover, .btn3:active:focus, .btn3:visited {
       background-color: transparent;
-      color: #16FF97;
-      border: 2px solid #16FF97;
+      color: #FC527F;
+      border: 2px solid #FC527F;
       outline: 0;
     }
 
@@ -269,6 +271,7 @@ a {
   padding-top: 1%;
   width: 95%;
   margin: 0 auto;
+  text-align: left;
 }
 
 .intro1, .intro2, .intro3 {
@@ -288,7 +291,7 @@ a {
 }
 
 .soundproof {
-  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1498270226/amp.jpg');
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1499379497/palms.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -331,8 +334,8 @@ a {
 }
 
 .cta-btn {
-  border: 2px solid #16FF97;
-  color: #16FF97;
+  border: 2px solid #FC527F;
+  color: #FC527F;
   background-color: #000000;
   font-family: 'Josefin Sans';
   text-transform: uppercase;
@@ -349,8 +352,8 @@ a {
 
 .cta-btn:hover, .cta-btn:active, .cta-btn:active:hover .cta-btn:active:visited {
     background-color: #000000 !important;
-    border: 3px solid #FF49F5 !important;
-    color: #FF49F5;
+    border: 3px solid #FF5349 !important;
+    color: #FF5349;
     font-weight: bold;
   }
 
@@ -462,4 +465,12 @@ a {
   letter-spacing: 2px;
   height: 3em;
   font-size: 20px;
+}
+
+/*Confirmation Modal
+*/
+
+.modal-images {
+  width: 75%;
+  margin: 0 auto;
 }

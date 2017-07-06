@@ -4,20 +4,22 @@ var lastScrollTop = 0;
 $( window ).scroll(function() {
   var st = $(this).scrollTop();
      if (st > lastScrollTop){
-        $('.nav-brand-image').attr( 'src', 'http://res.cloudinary.com/kurzweg/image/upload/v1498257685/guitartree_green2.png' );
-        $('.nav-stripe').css( 'background-color', '#FF49F5' );
+        // $('.nav-brand-image').attr( 'src', 'http://res.cloudinary.com/kurzweg/image/upload/v1498257685/guitartree_watermelon.png' );
+        // $('.nav-stripe').css( 'background-color', '#FF5349' );
         $('.hero-header').css('display', 'none')
-        $('.hero-header-scroll').css('display', 'block')
+        // $('.hero-header-scroll').css('display', 'block')
         $('.heroalt-header').css('display', 'none')
-        $('.heroalt-header-scroll').css('display', 'block')
+        // $('.heroalt-header-scroll').css('display', 'block')
+        $('.hero').css('background-color', 'transparent')
 
       } else {
-        $('.nav-brand-image').attr( 'src', 'http://res.cloudinary.com/kurzweg/image/upload/v1498257685/guitartree_pink.png' );
-        $('.nav-stripe').css( 'background-color', '#16FF97' );
+        // $('.nav-brand-image').attr( 'src', 'http://res.cloudinary.com/kurzweg/image/upload/v1498257685/guitartree_red.png' );
+        // $('.nav-stripe').css( 'background-color', '#24A5DA' );
         $('.hero-header').css('display', 'block')
-        $('.hero-header-scroll').css('display', 'none')
+        // $('.hero-header-scroll').css('display', 'none')
         $('.heroalt-header').css('display', 'block')
-        $('.heroalt-header-scroll').css('display', 'none')
+        // $('.heroalt-header-scroll').css('display', 'none')
+        $('.hero').css('background-color', 'rgba(43, 46, 37, .5)')
       }
 });
 
@@ -80,6 +82,9 @@ $('.contactBtn').on('click', function(e) {
         phone: $phone.val(),
         message: $message.val()
       },
+      success: function(response) {
+        $('.contact-modal').html(response).modal()
+      }
     })
     .done(function() {
       console.log("success");
@@ -90,4 +95,5 @@ $('.contactBtn').on('click', function(e) {
     .always(function() {
       console.log("complete");
     });
-  }
+  };
+});

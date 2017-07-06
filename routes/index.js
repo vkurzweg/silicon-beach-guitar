@@ -35,9 +35,9 @@ router.post('/contactus', function(req, res, next) {
       html: '<p>name: ' + req.body.contactName +'</p>' + '<p>email: ' + req.body.contactEmail + '</p>' + '<p>number: ' + req.body.contactPhone +'</p>' + '<p>message: ' + req.body.contactMessage + '</p>'
     }, function(err, reply) {
       console.log(err && err.stack);
-      if (reply.indexOf('221') >= 0){
-        res.status(200).send('Message sent');
-      }
+      // if (reply.indexOf('221') >= 0){
+      //   res.status(200).send('Message sent');
+      // }
       console.dir(reply);
   });
 });
