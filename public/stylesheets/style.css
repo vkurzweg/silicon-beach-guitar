@@ -60,7 +60,7 @@ a {
 }
 
 .nav-brand-title:hover, .nav-brand-title-link:hover {
-  color: #FF49F5;
+  color: #FF5349;
   text-decoration: none;
 }
 
@@ -268,10 +268,10 @@ a {
 .intro-copy {
   color: #F5F5F5;
   padding: 2%;
-  padding-top: 1%;
   width: 95%;
   margin: 0 auto;
   text-align: left;
+  line-height: 2em;
 }
 
 .intro1, .intro2, .intro3 {
@@ -290,13 +290,35 @@ a {
   height: 300px;
 }
 
-.soundproof {
+/*Wine Wednesday
+*/
+.ww {
   background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1499379497/palms.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 20%;
+  padding: 5%;
+}
+
+.ww-content {
+  background-color: rgba(43, 46, 37, .8);
+  width: 75%;
+  margin: 0 auto;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 3%;
+  border-radius: 5px;
+  font-family: 'Josefin Sans';
+}
+
+.ww-header {
+  font-size: 26px;
+}
+
+.ww-copy {
+  line-height: 1.5em;
+  font-size: 18px;
 }
 
 /*CTA
@@ -419,7 +441,7 @@ a {
 
 .rates-btn {
   border: none;
-  background-color: #16FF97;
+  background-color: #FC527F;
   font-family: 'Josefin Sans';
   text-transform: uppercase;
   letter-spacing: 1px;
