@@ -496,3 +496,33 @@ a {
   width: 75%;
   margin: 0 auto;
 }
+
+/*Footer*/
+
+.footer {
+  background-color: #000000;
+  font-size: 12px;
+  color: #FAFAFA;
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding: 2%;
+}
+
+.footer-link {
+  font-family: 'Roboto';
+  color: #108EE9;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.footer-link:hover {
+  color: #FC527F;
+  text-decoration: none;
+}
+
+.footer-image {
+  width: 50px;
+  height: 50px;
+}
