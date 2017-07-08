@@ -11,17 +11,25 @@ $( window ).scroll(function() {
         $('.heroalt-header').css('display', 'none')
         // $('.heroalt-header-scroll').css('display', 'block')
         $('.hero').css('background-color', 'transparent')
+        // $('#btn1').addClass('btn1-postclick')
+        // $('#btn1').removeClass('btn1')
 
       } else {
-        // $('.nav-brand-image').attr( 'src', 'http://res.cloudinary.com/kurzweg/image/upload/v1498257685/guitartree_red.png' );
+        $('.nav-brand-image').attr( 'src', 'http://res.cloudinary.com/kurzweg/image/upload/v1498257685/guitartree_red.png' );
         // $('.nav-stripe').css( 'background-color', '#24A5DA' );
         $('.hero-header').css('display', 'block')
         // $('.hero-header-scroll').css('display', 'none')
         $('.heroalt-header').css('display', 'block')
         // $('.heroalt-header-scroll').css('display', 'none')
         $('.hero').css('background-color', 'rgba(43, 46, 37, .5)')
+        // $('#btn1').addClass('btn1')
+        // $('#btn1').removeClass('btn1-postclick')
       }
 });
+
+// $('html, body').animate({
+//       scrollTop: $('.intro').offset().top
+//   }, 3000);
 
 // Intro copy buttons
 
@@ -50,14 +58,14 @@ $('#btn1').on('click', function() {
 
 $('#btn2').on('click', function() {
   showIntro2();
-  $('#btn1').addClass('btn1-postclick')
-  $('#btn1').removeClass('btn1')
+  $('#btn1').addClass('btn1')
+  $('#btn1').removeClass('btn1-postclick')
 })
 
 $('#btn3').on('click', function() {
   showIntro3();
-  $('#btn1').addClass('btn1-postclick')
-  $('#btn1').removeClass('btn1')
+  $('#btn1').addClass('btn1')
+  $('#btn1').removeClass('btn1-postclick')
 })
 
 // Contact form
