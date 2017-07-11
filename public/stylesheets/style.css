@@ -214,7 +214,7 @@ a {
 .btn1 {
   background-color: transparent;
   color: #24A5DA;
-  border: 2px solid #24A5DA;
+  border: 3px solid #24A5DA;
   outline: 0;
 }
 
@@ -227,7 +227,7 @@ a {
 .btn2 {
   background-color: transparent;
   color: #FF5349;
-  border: 2px solid #FF5349;
+  border: 3px solid #FF5349;
   outline: 0;
 }
 
@@ -240,7 +240,7 @@ a {
 .btn3 {
   background-color: transparent;
   color: #FC527F;
-  border: 2px solid #FC527F;
+  border: 3px solid #FC527F;
   outline: 0;
 }
 
@@ -327,6 +327,8 @@ a {
 
 .ww-header {
   font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .ww-copy {
