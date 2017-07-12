@@ -514,29 +514,34 @@ a {
 /*Footer*/
 
 .footer {
-  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1498181094/soundproof.jpg');
+/*  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1498181094/soundproof.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5%;
+*/
+  background-color: #000000;
   font-size: 12px;
   color: #FAFAFA;
   text-align: center;
   letter-spacing: 1.5px;
-  padding: 1%;
+  bottom: 0;
+}
+
+.footer-copy {
+  margin-bottom: 0;
 }
 
 .footer-link {
   font-family: 'Roboto';
-  color: #108EE9;
+  color: #FC527F;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   letter-spacing: 2px;
 }
 
 .footer-link:hover {
-  color: #FC527F;
+  color: #FF5349;
   text-decoration: none;
 }
 
