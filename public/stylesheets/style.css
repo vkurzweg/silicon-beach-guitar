@@ -16,8 +16,8 @@ a {
 /*Navigation
 */
 .nav {
-  height: 71px;
-  top: 0;
+/*  height: 71px;
+*/  top: 0;
   width: 100%;
   position: fixed;
   background-color: #000000;
@@ -25,8 +25,8 @@ a {
 }
 
 .nav-top {
-  height: 66px;
-  width: 100%;
+/*  height: 66px;
+*/  width: 100%;
 }
 
 .nav-stripe {
@@ -36,26 +36,14 @@ a {
   position: relative;
 }
 
-.nav-brand {
-  display: inline-flex;
-  margin-top: -1%;
-  color: #F5F5F5;
-}
-
-.nav-brand-image {
-  width: 50px;
-  height: 50px;
-  margin-top: 3%;
-  margin-left: 3%
-}
-
 .nav-brand-title {
   font-family: 'Poiret One';
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 2px;
+  margin-top: 1%;
   padding-top: 1%;
-  color: #F5F5F5;
+  color: #F5F5F5 !important;
   font-weight: bold;
 }
 
@@ -89,6 +77,23 @@ a {
   text-decoration: none;
 }
 
+.hamburger {
+  color: #F5F5F5;
+  font-size: 18px;
+  background-color: #000000 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+}
+
 /*Hero
 */
 
@@ -118,7 +123,7 @@ a {
   color: #FFFFFF;
   font-family: 'Monoton';
   text-align: center;
-  padding-top: 17%;
+  padding-top: 12%;
   font-size: 68px;
 }
 
@@ -185,7 +190,7 @@ a {
 }
 
 .hero-buttons {
-  width: 85%;
+  width: 90%;
   text-align: center;
   display: inline-block;
   margin: 0 auto;
