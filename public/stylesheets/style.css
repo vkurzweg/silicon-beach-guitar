@@ -305,6 +305,7 @@ a {
 
 .intro-image {
   height: 300px;
+  padding-bottom: 5%;
 }
 
 /*Wine Wednesday
@@ -319,7 +320,7 @@ a {
 }
 
 .ww-content {
-  background-color: rgba(43, 46, 37, .8);
+  background-color: rgba(43, 46, 37, .9);
   width: 75%;
   margin: 0 auto;
   color: #F5F5F5;
@@ -387,8 +388,7 @@ a {
   margin: 0 auto;
   width: 66%;
   border-radius: 2px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% auto;
 }
 
 .cta-btn:hover, .cta-btn:active, .cta-btn:active:hover .cta-btn:active:visited {
@@ -532,13 +532,20 @@ a {
   bottom: 0;
 }
 
+.footer-stripe {
+  height: 5px;
+  background-color: #FC527F;
+  z-index: 100;
+  position: relative;
+}
+
 .footer-copy {
   margin-bottom: 0;
 }
 
 .footer-link {
   font-family: 'Roboto';
-  color: #FC527F;
+  color: #24A5DA;
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
